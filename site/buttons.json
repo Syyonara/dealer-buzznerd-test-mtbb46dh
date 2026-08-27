@@ -45,15 +45,5 @@
     "intent": "about",
     "newTab": false,
     "active": true
-  },
-  {
-    "id": "rmi",
-    "label": "RMI",
-    "url": null,
-    "style": "primary",
-    "intent": "rmi",
-    "active": false,
-    "formId": "request-info",
-    "newTab": false
   }
 ]
