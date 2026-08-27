@@ -7,7 +7,32 @@
     "out": "index.html",
     "dir": "home",
     "status": "published",
-    "seo": { "ogImage": null, "noindex": false },
-    "templates": { "header": null, "footer": null, "utilityNav": null }
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "home-copy",
+    "title": "Home (copy)",
+    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "path": "/home-copy",
+    "out": "home-copy/index.html",
+    "dir": "home-copy",
+    "status": "draft",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
