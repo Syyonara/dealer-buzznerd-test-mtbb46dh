@@ -2,104 +2,184 @@
   "version": 3,
   "menus": [
     {
-      "id": "main",
-      "name": "Main menu",
+      "id": "utility-phone",
+      "name": "Utility bar — phone",
       "items": [
         {
-          "id": "home",
-          "label": "Home",
-          "type": "page",
-          "ref": "home",
-          "url": null,
-          "newTab": false,
-          "children": []
+          "id": "up-main",
+          "label": "(800) 555-0199",
+          "type": "url",
+          "url": "tel:+18005550199"
         },
+        {
+          "id": "up-sales",
+          "label": "Call Sales",
+          "type": "url",
+          "url": "tel:+18005550199"
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "name": "Main navigation",
+      "items": [
         {
           "id": "inventory",
           "label": "Inventory",
           "type": "inventory",
           "ref": "inventory",
-          "url": null,
-          "newTab": false,
-          "children": []
-        },
-        {
-          "id": "about",
-          "label": "About",
-          "type": "url",
-          "ref": null,
-          "url": "/about",
-          "newTab": false,
           "children": [
             {
-              "id": "about-history",
-              "label": "History",
-              "type": "url",
-              "ref": null,
-              "url": "/about#history",
-              "newTab": false,
-              "children": []
+              "id": "inv-all",
+              "label": "All Inventory",
+              "type": "inventory",
+              "ref": "inventory"
             },
             {
-              "id": "item-7",
-              "label": "New item",
-              "type": "url",
-              "url": "/",
-              "ref": null,
-              "children": []
+              "id": "inv-new",
+              "label": "New Trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=new"
+            },
+            {
+              "id": "inv-used",
+              "label": "Used Trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=used"
             }
           ]
         },
         {
-          "id": "about-team",
-          "label": "Our team",
+          "id": "brands",
+          "label": "Brands",
           "type": "url",
-          "ref": null,
-          "url": "/about#team",
-          "newTab": false,
-          "children": []
+          "url": "/#brands"
         },
         {
-          "id": "contact",
-          "label": "Contact",
+          "id": "lease-rental",
+          "label": "Lease & Rental",
+          "type": "inventory",
+          "ref": "inventory?offer=lease"
+        },
+        {
+          "id": "service",
+          "label": "Service",
           "type": "url",
-          "ref": null,
-          "url": "/contact",
-          "newTab": false,
-          "children": []
+          "url": "/#service"
+        },
+        {
+          "id": "parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "financing",
+          "label": "Financing",
+          "type": "url",
+          "url": "/#financing"
+        },
+        {
+          "id": "nav-search-item",
+          "label": "Search",
+          "type": "inventory",
+          "ref": "search"
+        }
+      ]
+    },
+    {
+      "id": "utility",
+      "name": "Utility bar",
+      "items": [
+        {
+          "id": "u-careers",
+          "label": "Careers",
+          "type": "post",
+          "ref": "training-the-next-generation"
+        },
+        {
+          "id": "u-about",
+          "label": "About Us",
+          "type": "url",
+          "url": "/#stats"
+        },
+        {
+          "id": "u-locations",
+          "label": "6 Locations",
+          "type": "url",
+          "url": "/#locations"
         }
       ]
     },
     {
       "id": "footer",
-      "name": "Footer menu",
+      "name": "Footer — Shop",
       "items": [
         {
-          "id": "f-inventory",
-          "label": "Inventory",
+          "id": "f-new",
+          "label": "New Trucks",
           "type": "inventory",
-          "ref": "inventory",
-          "url": null,
-          "newTab": false,
-          "children": []
+          "ref": "inventory?condition=new"
         },
         {
-          "id": "f-about",
-          "label": "About",
+          "id": "f-used",
+          "label": "Used Trucks",
+          "type": "inventory",
+          "ref": "inventory?condition=used"
+        },
+        {
+          "id": "f-financing",
+          "label": "Financing",
           "type": "url",
-          "ref": null,
-          "url": "/about",
-          "newTab": false,
-          "children": []
+          "url": "/#financing"
+        }
+      ]
+    },
+    {
+      "id": "footer-support",
+      "name": "Footer — Support",
+      "items": [
+        {
+          "id": "fs-service",
+          "label": "Service",
+          "type": "url",
+          "url": "/#service"
         },
         {
-          "id": "f-contact",
+          "id": "fs-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "fs-contact",
           "label": "Contact",
           "type": "url",
-          "ref": null,
-          "url": "/contact",
-          "newTab": false,
-          "children": []
+          "url": "/#contact"
+        }
+      ]
+    },
+    {
+      "id": "footer-company",
+      "name": "Footer — Company",
+      "items": [
+        {
+          "id": "fc-about",
+          "label": "About Us",
+          "type": "url",
+          "url": "/#stats"
+        },
+        {
+          "id": "fc-locations",
+          "label": "Locations",
+          "type": "url",
+          "url": "/#locations"
+        },
+        {
+          "id": "fc-careers",
+          "label": "Careers",
+          "type": "post",
+          "ref": "training-the-next-generation"
         }
       ]
     },
@@ -109,21 +189,15 @@
       "items": [
         {
           "id": "privacy",
-          "label": "Privacy",
-          "type": "url",
-          "ref": null,
-          "url": "/privacy",
-          "newTab": false,
-          "children": []
+          "label": "Privacy Policy",
+          "type": "page",
+          "ref": "privacy"
         },
         {
           "id": "terms",
           "label": "Terms",
-          "type": "url",
-          "ref": null,
-          "url": "/terms",
-          "newTab": false,
-          "children": []
+          "type": "page",
+          "ref": "terms"
         }
       ]
     }
