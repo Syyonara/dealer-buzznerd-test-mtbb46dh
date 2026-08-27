@@ -24,7 +24,7 @@
     "path": "/home-copy",
     "out": "home-copy/index.html",
     "dir": "home-copy",
-    "status": "draft",
+    "status": "archived",
     "seo": {
       "ogImage": null,
       "noindex": false
