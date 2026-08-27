@@ -1,0 +1,60 @@
+{
+  "slug": "imported-page",
+  "title": "Imported page",
+  "description": "",
+  "status": "draft",
+  "date": "2026-08-27",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "truck-display-section",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 7,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "truck-display-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "truck-display-column",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "truck-display-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Featured Trucks",
+                    "eyebrow": "Latest Inventory",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "inventory-carousel-widget",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
