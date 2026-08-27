@@ -52,7 +52,7 @@
     "url": null,
     "style": "primary",
     "intent": "rmi",
-    "active": true,
+    "active": false,
     "formId": "request-info",
     "newTab": false
   }
