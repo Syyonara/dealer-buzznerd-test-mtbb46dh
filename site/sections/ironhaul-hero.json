@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "id": "ironhaul-hero",
+  "name": "IronHaul Hero",
+  "props": [
+    {
+      "key": "headline",
+      "type": "text",
+      "label": "Headline"
+    },
+    {
+      "key": "subhead",
+      "type": "text",
+      "label": "Subheading"
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Hero Image"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ironhaul-hero-section",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "ironhaul-hero-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "ironhaul-hero-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ironhaul-hero-image",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ironhaul-hero-headline",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{headline}}",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "ironhaul-hero-subhead",
+                  "type": "text",
+                  "props": {
+                    "text": "{{subhead}}",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "ironhaul-hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": ".bz-section-ironhaul-hero{display:flex;flex-direction:column;align-items:center;text-align:center;}.bz-section-ironhaul-hero .ironhaul-hero-image{max-width:100%;height:auto;}.bz-section-ironhaul-hero .ironhaul-hero-headline{color:var(--accent);font-size:var(--type-h1);margin-bottom:var(--space-4);}.bz-section-ironhaul-hero .ironhaul-hero-subhead{font-size:var(--type-body);margin-bottom:var(--space-5);}.bz-section-ironhaul-hero .ironhaul-hero-cta{margin-top:var(--space-6);}",
+  "js": ""
+}
