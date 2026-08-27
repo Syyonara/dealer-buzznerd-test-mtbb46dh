@@ -34,5 +34,13 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "imported-page",
+    "dir": "imported-page",
+    "path": "/imported-page",
+    "out": "imported-page/index.html",
+    "title": "Imported page",
+    "status": "draft"
   }
 ]

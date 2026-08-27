@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "featured-inventory-section",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "paddingY": 7,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "featured-inventory-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "featured-inventory-column",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "featured-inventory-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Featured Inventory",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "featured-inventory-carousel",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
