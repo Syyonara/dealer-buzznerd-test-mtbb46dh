@@ -45,5 +45,14 @@
     "intent": "about",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "rmi",
+    "label": "RMI",
+    "url": null,
+    "style": "primary",
+    "intent": "rmi",
+    "active": true,
+    "formId": "check-availability"
   }
 ]
